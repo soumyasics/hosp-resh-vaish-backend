@@ -1,7 +1,7 @@
 const StaffModel= require("./StaffSchema")
 const addstaff=(req, res) => {
     let newStaff = new StaffModel({
-      fullname: req.body.fullname,
+      fullName: req.body.fullName,
     email: req.body.email,
     password: req.body.password,
     confirmPassword: req.body.confirmPassword,
