@@ -4,7 +4,7 @@ const Patientschema=new mongoose.Schema({
         patientlastname:String,   
         patientaddress:String, 
         patientage:Number,
-        patientdob:Number,
+        patientdob:Date,
         patientgender:String,
         patientbloodgroup:String,
         patientoccupation:String,
@@ -22,5 +22,5 @@ const Patientschema=new mongoose.Schema({
         identitycardno:Number,
         identityauthority:String,
 })
-const PatientModel=new mongoose.model("Patient",Patientschema)
+const PatientModel=new mongoose.model("patients",Patientschema)
 module.exports=PatientModel
